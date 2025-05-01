@@ -81,6 +81,9 @@ header{
     border: none;
     border-radius: 41px;
 }
+main{
+    margin: 0rem 11rem;
+}
 
 /* Navigation Bar */
 #logo{
@@ -128,24 +131,102 @@ header{
 }
 /*sponsor section styles*/
 .sponsor-section{
-    padding: 2.25rem 3.9rem;
-    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.15);
-    margin: 0rem 11em;
+    padding: 2.5rem 3.9rem;
+    box-shadow: 10px 10px 20px rgba(0, 4, 4, 25%);
 }
 .sponsor-companies{
     justify-content: space-between;
 }
-
+/* Popular Collection style */
+.collection-section{
+    margin: 7rem 2rem;
+}
+.collection-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.collection-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 0.5rem;
+    margin-top: 2rem;
+    
+}
+.collection-card{
+    max-width: 21rem;
+    max-height: 30rem;
+    box-shadow: 10px 10px 20px rgba(0, 4, 4, 25%);
+    justify-items: center;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.collection-card img{
+    padding: 0.5rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+.card-price{
+    font-size: 1.7rem;
+    margin-bottom: 0.2rem;
+}
+.card-description{
+    max-width: 15rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+/* Featured Section Style */
+.featured-section{
+    padding: 3rem;
+    justify-content: space-evenly;
+}
+.featured-title{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.featured-description{
+    font-size: 1rem;
+    max-width: 32rem;
+    padding-bottom: 1rem;
+}
+/* Footer style */
+.footer{
+    height: 20rem;
+    background-color: #0A0826;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.footer h3{
+    font-size: 2rem;
+    color: #D9DBE1;
+}
+.footer p{
+    font-size: 0.8rem;
+    color: #D9DBE1;
+}
+.footer-icons{
+    color: #D9DBE1;
+    padding: 1rem;
+}
 @media screen and (max-width:576px){
-    header{
+    header, main{
         margin: 1rem 1rem;
     }
     #logo{
         text-align: center;
     }
-    .hero {
+    .hero, .featured-section {
         flex-direction: column-reverse;
         align-items: center;
+    }
+    .hero-title{
+        font-size: 2rem;
     }
     .hero-image{
         margin-top: 1rem;
@@ -175,19 +256,49 @@ header{
         margin-top: 1rem;
         text-align: center;
     }
-    .sponsor-companies{
+    .sponsor-section {
+        padding: 1rem;
+        box-shadow: none;
+        text-align: center;
+    }
+    .sponsor-companies {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
-    .sponsor-companies img{
-        max-width: 70px;
-        max-height: 40px;
-        margin: 15px;
+    .sponsor-companies img {
+        max-width: 80px;
+        max-height: 50px;
+        margin: 0.5rem;
     }
-    .sponsor-section{
-        padding: 0rem 0rem;
-        box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.15);
-        margin: 3.2rem 2.6em;
+    .collection-cards {
+        grid-template-columns: repeat(1, 1fr);
     }
-
+    .featured-box{
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .featured-section img{
+        max-width: 299px;
+        max-height: 188px;
+        padding-bottom:0rem;
+    }
+    .featured-title{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .featured-description{
+        font-size: 1rem;
+        max-width: 32rem;
+        padding-bottom: 1rem;
+    }
+    .footer h3{
+        font-size: 1.5rem;
+        color: #D9DBE1;
+    }
+    .footer p{
+        font-size: 0.8rem;
+        color: #D9DBE1;
+    }
 }
 
